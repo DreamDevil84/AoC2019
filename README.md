@@ -14,7 +14,11 @@ Do note that the above command runs the file as a script, which is very slow. In
 
 $ swiftc Filename.swift
 
-This leaves you with an executable that can be run simply by typing "Filename". This is still not optimal so we will use the "-O" extension to optimise the compilation.
+To run a compiled file simply enter the following:
+
+./Filename
+
+This is still not optimal so we will use the "-O" extension to optimise the compilation.
 
 $ swiftc -O Filename.swift
 
