@@ -10,7 +10,7 @@ After that you can run a Swift file like this:
 
 $ swift Filename.swift
 
-Do note that the above command runs the file as a script, which is very slow. Instead we want to compile it so it runs faster. this is done by using "swiftc" like this:
+Do note that the above command runs the file as a script, which is very slow. Instead we want to compile it so it runs faster. This is done by using "swiftc" like this:
 
 $ swiftc Filename.swift
 
