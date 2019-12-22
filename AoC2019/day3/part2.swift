@@ -1,3 +1,9 @@
+//
+//  part2.swift
+//
+//  Created by Daniel Edström on 2019-12-01.
+//  Copyright © 2019 Daniel Edström. All rights reserved.
+//
 import Foundation
 let timeStart = Date().timeIntervalSince1970
 
@@ -182,7 +188,6 @@ func findShortest(distances: [[(x: Int, y: Int, fullDistance: Int, index: Int)]]
                 if a.x == b.x && a.y == b.y{
                     let distance = a.fullDistance + b.fullDistance
                     if distance < shortest{
-                        print("\(a.x),\(a.y)")
                         shortest = distance
                     }
                 }
