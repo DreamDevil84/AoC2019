@@ -1,0 +1,4 @@
+This was a lot trickier than it first appeared to be. One might think the problem can be solved by simply creating
+2 arrays with all the coordinates but I quickly realised that would not scale at all. So instead i created a line and coordinate
+class, so rather than comparing each indevidual coordinate, I instead compared the lines themselves.
+Part 2 admitedly got a little messy and would look much nicer if I simply started over... but meh :P
