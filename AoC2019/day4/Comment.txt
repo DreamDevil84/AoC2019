@@ -1,0 +1,2 @@
+Part 1 might have been possible to do with less code, however it did make part 2
+vert easy. All I had to do was add a quick dictionary search.
