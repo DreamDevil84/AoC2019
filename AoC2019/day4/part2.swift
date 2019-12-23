@@ -1,3 +1,9 @@
+//
+//  part2.swift
+//
+//  Created by Daniel Edström on 2019-12-01.
+//  Copyright © 2019 Daniel Edström. All rights reserved.
+//
 import Foundation
 let timeStart = Date().timeIntervalSince1970
 
@@ -112,19 +118,7 @@ func findAllPasswords(_ start: [Int], _ end: [Int]) -> [[Int]]{
     return allPasswords
 }
 
-var test1 = [2,2,2,2,3,3]
-let test2 = [1,2,3,4,4,4]
-
-
-
-
-
-
 let allPasswords = findAllPasswords(start, end)
-//let allPasswords = findAllPasswords(s, e)
-//let allPasswords = findAllPasswords(test1, test2)
-//print(allPasswords)
-//print("\(allPasswords.count) passwords")
 
 var count = 0
 for i in allPasswords{

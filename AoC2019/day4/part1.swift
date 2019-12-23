@@ -1,3 +1,9 @@
+//
+//  part1.swift
+//
+//  Created by Daniel Edström on 2019-12-01.
+//  Copyright © 2019 Daniel Edström. All rights reserved.
+//
 import Foundation
 let timeStart = Date().timeIntervalSince1970
 
@@ -19,6 +25,7 @@ func getIntArray(_ string: String) -> [Int]{
     }
     return intArray
 }
+
 var start = getIntArray(stringArray[0])
 var end = getIntArray(stringArray[1])
 
@@ -43,24 +50,6 @@ func firstPassword(_ intArray: [Int]) -> [Int]{
     }
     
     return newArray
-}
-func verifyDouble(_ password: [Int]) -> Bool{
-    var dict = [Int: Int]()
-    for i in password{
-        if dict[i] != nil{
-            dict.updateValue(dict[i]!+1, forKey: i)
-        } else {
-            dict.updateValue(1, forKey: i)
-        }
-    }
-    
-    for i in dict{
-        if i.value == 2{
-            return true
-        }
-    }
-    
-    return false
 }
 
 start = firstPassword(start)
@@ -112,28 +101,12 @@ func findAllPasswords(_ start: [Int], _ end: [Int]) -> [[Int]]{
     return allPasswords
 }
 
-var test1 = [2,2,2,2,3,3]
-let test2 = [1,2,3,4,4,4]
-
-
 
 
 
 
 let allPasswords = findAllPasswords(start, end)
-//let allPasswords = findAllPasswords(s, e)
-//let allPasswords = findAllPasswords(test1, test2)
-//print(allPasswords)
-//print("\(allPasswords.count) passwords")
-
-var count = 0
-for i in allPasswords{
-    if verifyDouble(i){
-        count += 1
-    }
-}
-
-print("Legit passwords: \(count)")
+print("\(allPasswords.count) passwords")
 
 //-------------------------------------
 
