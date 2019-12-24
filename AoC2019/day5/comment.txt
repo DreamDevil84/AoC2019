@@ -1,0 +1,2 @@
+The language of the question made this one a bit tricky at first, but it was solved fairly easily by following the instructions.
+Code for intcomputer was cleaned up in part2

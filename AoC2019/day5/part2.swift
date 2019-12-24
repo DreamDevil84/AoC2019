@@ -1,3 +1,9 @@
+//
+//  part2.swift
+//
+//  Created by Daniel Edström on 2019-12-01.
+//  Copyright © 2019 Daniel Edström. All rights reserved.
+//
 import Foundation
 let timeStart = Date().timeIntervalSince1970
 

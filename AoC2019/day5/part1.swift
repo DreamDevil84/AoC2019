@@ -4,6 +4,7 @@
 //  Created by Daniel Edström on 2019-12-01.
 //  Copyright © 2019 Daniel Edström. All rights reserved.
 //
+
 import Foundation
 let timeStart = Date().timeIntervalSince1970
 
@@ -26,9 +27,8 @@ func getIntArray(_ string: String) -> [Int]{
 
 let intArray = getIntArray(stringArray[0])
 
-func intComp(_ intArray: [Int], input: Int) -> Int{
+func intComp(_ intArray: [Int], input: Int) -> [Int]{
     var array = intArray
-    var output = 0
     func extractParameters(num: Int) -> (opCode: Int, parameters: [Int]){
         let opCode = num % 100
         let parameters = num / 100
@@ -69,7 +69,6 @@ func intComp(_ intArray: [Int], input: Int) -> Int{
         case 4:
             let outputIndex = array[index+1]
             print(array[outputIndex])
-            output = array[outputIndex]
             index += 1
         case 99:
             index = array.count
@@ -78,11 +77,11 @@ func intComp(_ intArray: [Int], input: Int) -> Int{
         }
         index += 1
     }
-    return output
+    return array
 }
 
 
-print("Answer: \(intComp(intArray, input: 1))")
+let x = intComp(intArray, input: 1)
 //-------------------------------------
 
 let timeEnd = Int((Date().timeIntervalSince1970 - timeStart) * 1000)
